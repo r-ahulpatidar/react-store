@@ -21,19 +21,19 @@ const Header = ({ user, onLogout }) => {
           <div className="flex items-center justify-between">
             <ul className="flex space-x-5">
               <li>
-                <a href="/posts" className="hover:text-gray-300 p-1">
+                <Link to="/posts" className="hover:text-gray-300 p-1">
                   Posts
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/users" className="hover:text-gray-300 p-1">
+                <Link to="/users" className="hover:text-gray-300 p-1">
                   Users
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/products" className="hover:text-gray-300 p-1">
+                <Link to="/products" className="hover:text-gray-300 p-1">
                   Products
-                </a>
+                </Link>
               </li>
             </ul>
             {/* end */}
