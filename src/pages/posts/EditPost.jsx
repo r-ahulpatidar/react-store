@@ -164,7 +164,7 @@ const EditPost = () => {
       userId,
       body,
       reactions,
-      tags,
+      // ...tags,
     };
     setPostData(formDefaultValues);
   };
@@ -319,7 +319,7 @@ const EditPost = () => {
           )}
         </div>
 
-        <div className="mb-4">
+        {/* <div className="mb-4">
           <label className="my-4">
             Tags:
             <br />
@@ -335,7 +335,7 @@ const EditPost = () => {
           {errors.tags && touched.tags && (
             <span className="text-red-500 text-sm">{errors.tags}</span>
           )}
-        </div>
+        </div> */}
 
         <div className="flex gap-4 mt-8 justify-end">
           <button
