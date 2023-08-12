@@ -21,12 +21,12 @@ const Users = () => {
     <>
       <Header user={user} onLogout={() => dispatch(logOutAction())} />
       <div className="m-4 flex justify-end">
-        <a
-          href="/users/create"
+        <Link
+          to="/users/create"
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
         >
           + Create new User
-        </a>
+        </Link>
       </div>
       <section className="flex flex-wrap -mx-4">
         {users.map((user) => (

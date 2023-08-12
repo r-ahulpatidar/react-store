@@ -22,12 +22,12 @@ const Posts = () => {
       <Header user={user} onLogout={() => dispatch(logOutAction())} />
 
       <div className="m-4 flex justify-end">
-        <a
-          href="/posts/create"
+        <Link
+          to="/posts/create"
           className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
         >
           + Create new post
-        </a>
+        </Link>
       </div>
       <section>
         {posts.map((post, i) => (
