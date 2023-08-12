@@ -183,7 +183,7 @@ import { Formik } from 'formik';
 import { useDispatch, useSelector } from 'react-redux';
 import CreateHeader from '../../components/CreateHeader';
 import { createPostAction } from '../../store/posts/action';
-import { useEffect } from 'react';
+import { useCallback, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -246,6 +246,7 @@ const CreatePost = () => {
     setSubmitting(false);
   };
 
+  
   const goBack = () => {
     navigator('/posts');
   };
